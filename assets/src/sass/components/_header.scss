@@ -1,3 +1,38 @@
-header {
-	position: relative;
+#masthead {
+	position: fixed;
+	background: rgba(0,0,0,0);
+	min-width: 100vw;
+	max-width: 100vw;
+
+	z-index: 100000;
+}
+
+.main-navigation{
+
+	padding-right: 30px;
+
+	ul {
+
+		text-transform: uppercase;
+		
+		li {
+			list-style-type: none;
+			float: right;
+			margin-left: 2em;
+
+			a {
+				color: white;
+
+				&:hover {
+					color: $red;
+				}
+			}
+		}
+	}
+	
+}
+
+.header-logo {
+	transform: scale(0.5) translateY(-40%);
+	position: absolute;
 }

@@ -33,12 +33,17 @@
 					<div class="col-xs-12 col-sm-4">
 
 						<div class="site-branding">
-							<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+							<img class="header-logo" 
+								src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/LJC-Logo_Weiss.svg"
+							 	alt="<?php bloginfo( 'name' ); ?>"
+								title="<?php bloginfo( 'name' ); ?>"
+							 />
+							<h1 class="site-title hide"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 							<?php
 							$description = get_bloginfo( 'description', 'display' );
 							if ( $description || is_customize_preview() ) : ?>
-								<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
-							<?php endif; ?>
+								<p class="site-description hide"><?php echo $description; /* WPCS: xss ok. */ ?></p>
+							<?php endif; ?> 
 					</div><!-- .site-branding -->
 
 				</div><!-- .col -->

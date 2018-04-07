@@ -4,6 +4,7 @@
 
 // Import libraries
 import 'slick-carousel';
+import 'vide';
 
 // Import custom modules
 import App from'./modules/app.js';

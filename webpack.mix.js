@@ -10,11 +10,7 @@ let mix = require( 'laravel-mix' );
 // BrowserSync and LiveReload on `npm run watch` command
 // Update the `proxy` and the location of your SSL Certificates if you're developing over HTTPS
 mix.browserSync({
-	proxy: 'https://wp.dev',
-	https: {
-		key: '/Users/alecaddd/.valet/Certificates/wp.dev.key',
-		cert: '/Users/alecaddd/.valet/Certificates/wp.dev.crt'
-	},
+	proxy:'http://localhost/ljc',
 	files: [
 		'**/*.php',
 		'assets/dist/css/**/*.css',
@@ -29,6 +25,8 @@ mix.browserSync({
 mix.autoload({
     'jquery': ['jQuery', '$']
 });
+
+mix.setPublicPath('./');
 
 // Compile assets
 mix.js( 'assets/src/scripts/app.js', 'assets/dist/js' )
