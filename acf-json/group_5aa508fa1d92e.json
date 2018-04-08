@@ -8,7 +8,7 @@
             "name": "konzertort",
             "type": "text",
             "instructions": "",
-            "required": 0,
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -35,7 +35,7 @@
                 "id": ""
             },
             "display_format": "d.m.Y H:i",
-            "return_format": "d.m.Y H:i",
+            "return_format": "d.m.Y H:m",
             "first_day": 1
         },
         {
@@ -80,6 +80,25 @@
             "min": "",
             "max": "",
             "return_format": "object"
+        },
+        {
+            "key": "field_5ac8fe6d2cea8",
+            "label": "Auszug Front",
+            "name": "auszug_front",
+            "type": "textarea",
+            "instructions": "Optionaler Text auf der Frontseite, zB für das Programm",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "br"
         }
     ],
     "location": [
@@ -99,5 +118,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1523039220
+    "modified": 1523125042
 }

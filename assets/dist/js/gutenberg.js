@@ -60,39 +60,31 @@
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 11);
+/******/ 	return __webpack_require__(__webpack_require__.s = 12);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */,
-/* 1 */,
-/* 2 */,
-/* 3 */,
-/* 4 */,
-/* 5 */,
-/* 6 */,
-/* 7 */,
-/* 8 */,
-/* 9 */,
-/* 10 */,
-/* 11 */
+/******/ ({
+
+/***/ 12:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(12);
+module.exports = __webpack_require__(13);
 
 
 /***/ }),
-/* 12 */
+
+/***/ 13:
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
  * Import your Gutenberg custom blocks here
  */
-__webpack_require__(13);
 __webpack_require__(14);
+__webpack_require__(15);
 
 /***/ }),
-/* 13 */
+
+/***/ 14:
 /***/ (function(module, exports) {
 
 var _wp$blocks = wp.blocks,
@@ -157,7 +149,8 @@ registerBlockType('gutenberg-test/hello-world', {
 });
 
 /***/ }),
-/* 14 */
+
+/***/ 15:
 /***/ (function(module, exports) {
 
 var registerBlockType = wp.blocks.registerBlockType;
@@ -194,4 +187,5 @@ registerBlockType('gutenberg-test/latest-post', {
 });
 
 /***/ })
-/******/ ]);
+
+/******/ });

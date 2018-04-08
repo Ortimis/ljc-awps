@@ -1,0 +1,62 @@
+article {
+    position: relative;
+}
+
+/*
+    KONZERT FRONT
+*/
+
+.konzert-front {
+    color: white;
+    background-color: $red;
+    padding: 0;
+    margin: 0 2em 2em 0;
+    max-width: 600px;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        transform: translateY(-.6em);
+        box-shadow: 0px 0px 22px 6px rgba(0,0,0,0.4);
+    }
+
+
+    a span {
+        position:absolute; 
+        width:100%;
+        height:100%;
+        top:0;
+        left: 0;
+      
+        z-index: 1;
+    }
+
+    .entry-content {
+        padding: 2em;
+
+        h1 {
+            font-size: 1.25em;
+            line-height: 1.25em;
+            text-align: center;
+        }
+
+    }
+
+    .entry-footer {
+        padding: 2em;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        span {
+            text-align: center;
+            display: inline-block;
+            width: 100%;
+        }
+
+    }
+}
+
+/* * {
+    box-shadow: 0px 0px 22px 6px rgba(0,0,0,0.75);
+} */

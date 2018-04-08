@@ -29,37 +29,19 @@ if ( $query_konzert->have_posts() ) {
 
 <section id="konzerte">
 
-	<div class="container">
+	<div class="container-fluid">
 
-		<div class="row">
+		<div class="row justify-center">
 
-
-			<div class="col-sm-8">
-
-				<div id="primary" class="content-area">
-					<main id="main" class="site-main" role="main">
 						<?php
 
 							while ( $query_konzert->have_posts() ) {
 								$query_konzert->the_post();
-								?>
-									<h1>Es gibt ein Konzert mit nicht abgelaufenem Datum.</h1>
-									<h2><?php the_field('konzertort');?></h2>
-									Anfang:
-									Ende:
-									<?php
-									the_field('datum_und_uhrzeit_ende');
-									?>
-									Jetzt:
-									<?php
-									echo $timenow;
+								
+								get_template_part('views/content-konzert', 'front');
 							}
 						?>
 
-					</main><!-- #main -->
-				</div><!-- #primary -->
-
-			</div><!-- .col- -->
 
 		</div><!-- .row -->
 

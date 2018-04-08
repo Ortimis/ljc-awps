@@ -42,6 +42,8 @@
   },
   "homepage": "https://github.com/Alecaddd/awps#readme",
   "dependencies": {
+    "izimodal": "^1.5.1",
+    "magnific-popup": "^1.1.0",
     "normalize-scss": "^7.0.1",
     "slick-carousel": "^1.8.1",
     "vide": "^0.5.1"

@@ -2,19 +2,25 @@ button {
 	@include transition(all $time $ease);
 }
 
-.btn {
+.btn, a .btn {
 	padding: ($gutter * 1.5) ($gutter * 3);
-	border: none;
+	min-width: 80px;
+	border: 1px solid;
 	border-radius: 2px;
+	display: inline-block;
+	text-align: center;
+	color: white;
 
-	@extend .h3;
+	@extend .h4;
 
 	&:active {
 		box-shadow: none;
 	}
 
-	&:focus {
+	&:focus, &:hover {
 		outline: none;
+		background-color: white;
+		color: $red;
 	}
 
 	&.btn-sm {
@@ -33,5 +39,14 @@ button {
 		padding: ($gutter * 0.6) $gutter;
 
 		@include font-size(11px, 11px, 0.4px);
+	}
+
+	.btn-light {
+		color: white;
+		
+		&:hover, &:focus {
+			background-color: white;
+			color: $red;
+		}
 	}
 }
