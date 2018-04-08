@@ -27,32 +27,17 @@ if ( $query_phase->have_posts() ) {
 
 <section id="ausschreibung">
 
-	<div class="container">
+	<main id="main" class="site-main" role="main">
+		<?php
 
-		<div class="row">
+			while ( $query_phase->have_posts() ) {
+				$query_phase->the_post();
+				
+				get_template_part('views/content-phase', 'front');
+			}
+		?>
 
-
-			<div class="col-sm-8">
-
-				<div id="primary" class="content-area">
-					<main id="main" class="site-main" role="main">
-						<?php
-
-							while ( $query_phase->have_posts() ) {
-								$query_phase->the_post();
-                                
-                                get_template_part('views/content', 'phase');
-							}
-						?>
-
-					</main><!-- #main -->
-				</div><!-- #primary -->
-
-			</div><!-- .col- -->
-
-		</div><!-- .row -->
-
-	</div><!-- .container -->
+	</main><!-- #main -->
 
 </section>
 

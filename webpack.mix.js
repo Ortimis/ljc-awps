@@ -36,4 +36,5 @@ mix.js( 'assets/src/scripts/app.js', 'assets/dist/js' )
 	.sass( 'assets/src/sass/admin.scss', 'assets/dist/css' )
 	.sass( 'assets/src/sass/gutenberg.scss', 'assets/dist/css' )
 	.copyDirectory( 'assets/src/fonts', 'assets/dist/fonts' )
-	.copyDirectory( 'assets/src/images', 'assets/dist/images' );
+	.copyDirectory( 'assets/src/images', 'assets/dist/images' )
+	.sourceMaps();

@@ -3,6 +3,35 @@ article {
 }
 
 /*
+    PHASE FRONT
+*/
+
+.phase-front {
+    padding: 4em 0;
+    .call-to-action {
+        text-align: right;
+
+        .phase-titel{
+            word-spacing:10000px;
+            letter-spacing: .2em;
+            text-transform: uppercase;
+
+            &::first-line {
+                font-weight: 100;
+            }
+        }
+    }
+
+    .content{
+       margin: 50px 0 100px 0;
+    }
+
+    span {
+        text-transform: uppercase;
+    }
+}
+
+/*
     KONZERT FRONT
 */
 
@@ -15,8 +44,8 @@ article {
     transition: all .2s ease-in-out;
 
     &:hover {
-        transform: translateY(-.6em);
-        box-shadow: 0px 0px 22px 6px rgba(0,0,0,0.4);
+        transform: translateY(-10px);
+        box-shadow: 0px 0px 22px 6px rgba(0,0,0,0.15);
     }
 
 
@@ -32,6 +61,7 @@ article {
 
     .entry-content {
         padding: 2em;
+        text-align: center;
 
         h1 {
             font-size: 1.25em;
@@ -43,15 +73,18 @@ article {
 
     .entry-footer {
         padding: 2em;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
+        text-align: center;;
+        font-size: 0.9em;
 
         span {
             text-align: center;
             display: inline-block;
             width: 100%;
+
+        }
+
+        time {
+            
         }
 
     }

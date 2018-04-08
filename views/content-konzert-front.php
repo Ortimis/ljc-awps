@@ -7,7 +7,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('konzert-front col-lg-4 col-md-6'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('konzert-front col-lg-3 col-md-6'); ?>>
     <a href="<?php the_permalink(); ?>"><span></span></a>
 	<header class="entry-header">
         <?php if ( has_post_thumbnail() ){ ?>
@@ -26,7 +26,11 @@
 
 	<footer class="entry-footer">
 
-        <span class="mt-3"><?php the_field('konzertort');?> | <?php the_field('datum_und_uhrzeit')?></span>
+        <span class="mt-3">
+            <?php the_field('konzertort');?> 
+            <br> 
+            <time><?php the_field('datum_und_uhrzeit')?></time>
+        </span>
 
     </footer><!-- .entry-footer -->
 </article><!-- #post-## -->

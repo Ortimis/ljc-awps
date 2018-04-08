@@ -6118,17 +6118,19 @@ a .btn.btn-xxs {
   letter-spacing: 0.4px;
 }
 
-.btn .btn-light,
-a .btn .btn-light {
-  color: white;
+.btn.btn-light,
+a .btn.btn-light {
+  color: #881b1b;
+  background-color: white;
+  font-weight: 400;
 }
 
-.btn .btn-light:hover,
-.btn .btn-light:focus,
-a .btn .btn-light:hover,
-a .btn .btn-light:focus {
-  background-color: white;
-  color: #881b1b;
+.btn.btn-light:hover,
+.btn.btn-light:focus,
+a .btn.btn-light:hover,
+a .btn.btn-light:focus {
+  background-color: #881b1b;
+  color: white;
 }
 
 a {
@@ -6358,6 +6360,36 @@ article {
 }
 
 /*
+    PHASE FRONT
+*/
+
+.phase-front {
+  padding: 4em 0;
+}
+
+.phase-front .call-to-action {
+  text-align: right;
+}
+
+.phase-front .call-to-action .phase-titel {
+  word-spacing: 10000px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+.phase-front .call-to-action .phase-titel::first-line {
+  font-weight: 100;
+}
+
+.phase-front .content {
+  margin: 50px 0 100px 0;
+}
+
+.phase-front span {
+  text-transform: uppercase;
+}
+
+/*
     KONZERT FRONT
 */
 
@@ -6372,10 +6404,10 @@ article {
 }
 
 .konzert-front:hover {
-  -webkit-transform: translateY(-0.6em);
-          transform: translateY(-0.6em);
-  -webkit-box-shadow: 0px 0px 22px 6px rgba(0, 0, 0, 0.4);
-          box-shadow: 0px 0px 22px 6px rgba(0, 0, 0, 0.4);
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 0px 0px 22px 6px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 22px 6px rgba(0, 0, 0, 0.15);
 }
 
 .konzert-front a span {
@@ -6389,6 +6421,7 @@ article {
 
 .konzert-front .entry-content {
   padding: 2em;
+  text-align: center;
 }
 
 .konzert-front .entry-content h1 {
@@ -6400,16 +6433,7 @@ article {
 .konzert-front .entry-footer {
   padding: 2em;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  font-size: 0.9em;
 }
 
 .konzert-front .entry-footer span {
@@ -6431,7 +6455,7 @@ section {
 }
 
 #hero {
-  background-image: url(https://images.pexels.com/photos/340779/pexels-photo-340779.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background: url(https://images.pexels.com/photos/418831/pexels-photo-418831.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   background-repeat: none;
   background-position: center;
   background-size: cover;
@@ -6447,10 +6471,8 @@ section {
 #ausschreibung {
   background-color: #881b1b;
   color: white;
-}
-
-#ausschreibung a {
-  color: white;
+  -webkit-box-shadow: 0px 2px 29px 0px rgba(50, 50, 50, 0.75);
+          box-shadow: 0px 2px 29px 0px rgba(50, 50, 50, 0.75);
 }
 
 #konzerte {
