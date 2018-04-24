@@ -60,31 +60,31 @@
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 12);
+/******/ 	return __webpack_require__(__webpack_require__.s = 13);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 12:
+/***/ 13:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(13);
+module.exports = __webpack_require__(14);
 
 
 /***/ }),
 
-/***/ 13:
+/***/ 14:
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
  * Import your Gutenberg custom blocks here
  */
-__webpack_require__(14);
 __webpack_require__(15);
+__webpack_require__(16);
 
 /***/ }),
 
-/***/ 14:
+/***/ 15:
 /***/ (function(module, exports) {
 
 var _wp$blocks = wp.blocks,
@@ -150,7 +150,7 @@ registerBlockType('gutenberg-test/hello-world', {
 
 /***/ }),
 
-/***/ 15:
+/***/ 16:
 /***/ (function(module, exports) {
 
 var registerBlockType = wp.blocks.registerBlockType;

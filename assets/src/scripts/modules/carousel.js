@@ -5,14 +5,13 @@ class Carousel {
     }
 
     init() {
-        $( '.fade-carousel' ).slick({
+        $( '#aktuelles-wrapper' ).slick({
             dots: true,
             arrows: false,
             autoplay: true,
-            infinite: true,
             speed: 500,
-            fade: true,
-            cssEase: 'linear'
+            cssEase: 'linear',
+            slidesToShow: 3,
         });
     }
 }
