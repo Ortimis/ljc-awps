@@ -7,8 +7,8 @@
             "label": "Phasenstatus",
             "name": "phasenstatus",
             "type": "radio",
-            "instructions": "Eine Phase mit Status \"Ausschreibung\" wird auf der Homepage sehr weit oben angezeigt.\r\nEine Phase mit Status \"Nachlese\" wird nur als Blogpost unter \"Aktuelles\" angezeigt.",
-            "required": 0,
+            "instructions": "Nach einer krankheitsbedingten Absage unseres Chefdirigenten Dan-Olof Stenlund sind wir froh und glücklich, für die Pfingstphase 2018 nun mit Prof. Denis Rouger einen uns wohlbekannten und kompetenten musikalischen Leiter verpflichtet zu haben. Hier kommt nun auch die Ausschreibung Pfingstphase 2018. Interessierte melden sich bitte über diese Homepage an. Ihr erhaltet direkt nach Anmeldeschluss einen Bescheid, ob Ihr zugelassen werden könnt.",
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -19,12 +19,31 @@
                 "Ausschreibung": "Ausschreibung",
                 "Nachlese": "Nachlese"
             },
+            "allow_null": 0,
             "other_choice": 0,
             "save_other_choice": 0,
             "default_value": "Ausschreibung",
             "layout": "horizontal",
-            "allow_null": 0,
             "return_format": "value"
+        },
+        {
+            "key": "field_5aca046a68e5b",
+            "label": "Allgemeiner Text",
+            "name": "allgemeiner_text",
+            "type": "textarea",
+            "instructions": "Wird bei Status \"Ausschreibung\" als Auszug auf der Homepage vorne gezeigt.\r\nKlickt man auf die Phase, ist das der erste einleitende Text.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "br"
         },
         {
             "key": "field_5aa41e0c77bef",
@@ -32,7 +51,7 @@
             "name": "anmeldeschluss",
             "type": "date_picker",
             "instructions": "",
-            "required": 0,
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -57,9 +76,9 @@
                 "id": ""
             },
             "default_value": "",
+            "tabs": "all",
             "toolbar": "full",
             "media_upload": 1,
-            "tabs": "all",
             "delay": 0
         },
         {
@@ -76,9 +95,9 @@
                 "id": ""
             },
             "default_value": "Sonntag, 20.5.2018 (14 Uhr) bis Sonntag, 27.5.2018 (19 Uhr)\r\nBundesakademie für musikalische Jugendbildung\r\nHugo-Herrmann-Straße 22\r\n78647 Trossingen\r\nwww.bundesakademie-trossingen.de",
+            "tabs": "all",
             "toolbar": "basic",
             "media_upload": 0,
-            "tabs": "all",
             "delay": 0
         },
         {
@@ -114,9 +133,9 @@
                 "id": ""
             },
             "default_value": "Management und Ansprechpartner\r\nDaniel Roos\r\nErlenweg 2\r\n77933 Lahr\/Schwarzwald\r\nTelefon 07821-3272200 \/ Mobil 0178-8575121\r\ndaniel.roos@landesjugendchor.de\r\nStimmbildung\r\nCornelia Karle (Stuttgart)\r\nSilke Marchfeld (Weil am Rhein)\r\nGunter Hartmann (Karlsruhe)\r\nTräger\r\nLandesmusikrat Baden-Württemberg e.V.\r\nOrtsstraße 6\r\n76228 Karlsruhe\r\nTelefon 0721-947670\r\nTelefax 0721-9473330\r\nkontakt@landesmusikrat-bw.de",
+            "tabs": "all",
             "toolbar": "full",
             "media_upload": 1,
-            "tabs": "all",
             "delay": 0
         }
     ],
@@ -137,5 +156,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1523038392
+    "modified": 1523189132
 }

@@ -15,7 +15,6 @@ get_header(); ?>
             <div class="row">
                 <img class="main-logo" src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/LJC-Logo_Weiss.svg" alt="<?php bloginfo( 'name' ); ?>" title="<?php bloginfo( 'name' ); ?>">
             </div>
-            <button class="btn js-modal-btn" data-video-id="7TUOI23spt0">Video</button>
         </div>
     </section>
 
