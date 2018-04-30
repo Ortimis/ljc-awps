@@ -36,9 +36,6 @@ if ( $query_aktuelles->have_posts() ) {
 
 		<div class="row">
 
-
-			<div class="col-sm-8">
-
 				<div id="primary" class="content-area">
 					<main id="aktuelles-wrapper" class="site-main" role="main">
 						<?php
@@ -53,8 +50,6 @@ if ( $query_aktuelles->have_posts() ) {
 
 					</main><!-- #main -->
 				</div><!-- #primary -->
-
-			</div><!-- .col- -->
 
 		</div><!-- .row -->
 
