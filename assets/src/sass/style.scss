@@ -2,6 +2,8 @@
 # Import Modules
 --------------------------------------------------------------*/
 @import '~normalize-scss/sass/normalize/import-now';
+@import '~slick-carousel/slick/slick-theme.css';
+@import '~slick-carousel/slick/slick.css';
 
 /*--------------------------------------------------------------
 # Base
@@ -33,6 +35,11 @@
 @import 'components/sidebar';
 @import 'components/footer';
 @import 'components/post';
+
+/*--------------------------------------------------------------
+# Blocks
+--------------------------------------------------------------*/
+@import 'blocks/gutenberg';
 
 /*--------------------------------------------------------------
 # Pages

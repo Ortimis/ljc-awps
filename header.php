@@ -33,7 +33,7 @@
 					<div class="col-xs-12 col-sm-4">
 
 						<div class="site-branding">
-							<img class="header-logo" 
+							<img id="header-logo" class="header-logo" 
 								src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/LJC-Logo_Weiss.svg"
 							 	alt="<?php bloginfo( 'name' ); ?>"
 								title="<?php bloginfo( 'name' ); ?>"

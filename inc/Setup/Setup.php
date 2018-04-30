@@ -58,6 +58,25 @@ class Setup
             'audio',
             'chat',
         ) );
+
+        /**
+        * Add support for Gutenberg.
+        *
+        * @link https://wordpress.org/gutenberg/handbook/reference/theme-support/
+        */
+        add_theme_support( 'gutenberg', array(
+        
+            // Theme supports wide images, galleries and videos.
+            'wide-images' => true,
+        
+            // Make specific theme colors available in the editor.
+            'colors' => array(
+                '#ffffff',
+                '#000000',
+                '#cccccc',
+            ),
+        
+	) );
     }
 
     /*

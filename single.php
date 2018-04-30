@@ -11,7 +11,7 @@ get_header(); ?>
 
 <div class="container">
 
-	<div class="row">
+	<div class="row justify-center">
 
 		<div class="col-sm-8">
 
@@ -39,10 +39,6 @@ get_header(); ?>
 				</main><!-- #main -->
 			</div><!-- #primary -->
 
-		</div><!-- .col- -->
-
-		<div class="col-sm-4">
-			<?php get_sidebar(); ?>
 		</div><!-- .col- -->
 
 	</div><!-- .row -->

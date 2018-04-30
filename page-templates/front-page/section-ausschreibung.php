@@ -44,7 +44,7 @@ if ( $query_phase->have_posts() ) {
 <?php
 
 } else {
-   echo '<pre>Keine Arbeitsphase mit Status "Ausschreibung". Ausschreibungen mit Status "Nachlese" werden unter "Aktuelles" gezeigt</pre>';
+echo '<pre class="hide">Keine Arbeitsphase mit Status "Ausschreibung". Ausschreibungen mit Status "Nachlese" werden unter "Aktuelles" gezeigt</pre>';   
 }
 
 // Restore original Post Data

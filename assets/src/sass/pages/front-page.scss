@@ -8,7 +8,7 @@ section{
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    min-height: 80vh;
+    min-height: 90vh;
     
 
     .main-logo {
@@ -27,4 +27,8 @@ section{
 #konzerte {
     padding: 2em 0;
     background-color: lighten($red, 10%);
+}
+
+#aktuelles {
+    padding: 6em 0;
 }
