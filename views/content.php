@@ -9,8 +9,8 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+<article id="post-<?php the_ID(); ?>" <?php post_class('blogpost'); ?>>
+	<header class="entry-header <?php if ( is_single() ) { echo 'mb-10 single'; } ?>">
 		<?php
 				if ( is_single() ) :
 						the_title( '<h1 class="entry-title">', '</h1>' );

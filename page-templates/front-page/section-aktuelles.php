@@ -7,6 +7,7 @@
 $args = array(
 	'post_type'              => array('post', 'phase'),
 	'post_status'            => 'publish',
+	'posts_per_page' 		 => 10,
 	'meta_query'			 => array(
 		array(
 			'key' => 'phasenstatus',
@@ -34,8 +35,7 @@ if ( $query_aktuelles->have_posts() ) {
 
 	<div class="container">
 
-		<div class="row">
-
+				
 				<div id="primary" class="content-area">
 					<main id="aktuelles-wrapper" class="site-main" role="main">
 						<?php
@@ -51,8 +51,8 @@ if ( $query_aktuelles->have_posts() ) {
 					</main><!-- #main -->
 				</div><!-- #primary -->
 
-		</div><!-- .row -->
-
+				
+				<a href="<?php echo home_url(); ?>/blog" class="btn btn-sm btn-light btn-transp">Zum Blog</a>
 	</div><!-- .container -->
 
 </section>

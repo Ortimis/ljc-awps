@@ -14,10 +14,6 @@ footer {
 		}
 	}
 
-	.row {
-		flex-direction: column;
-	}
-
 	.menu {
 		list-style-type: none;
 		padding-left: 0;
@@ -25,4 +21,8 @@ footer {
 		display: block;
 		margin-top: 0;
 	}
+}
+
+#content {
+	min-height: 60vh;
 }

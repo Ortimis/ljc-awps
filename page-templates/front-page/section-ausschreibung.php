@@ -26,18 +26,21 @@ if ( $query_phase->have_posts() ) {
 ?>
 
 <section id="ausschreibung">
+	<div class="container">
 
-	<main id="main" class="site-main" role="main">
-		<?php
+		<main id="main" class="site-main" role="main">
+			<?php
 
-			while ( $query_phase->have_posts() ) {
-				$query_phase->the_post();
-				
-				get_template_part('views/content-phase', 'front');
-			}
-		?>
+				while ( $query_phase->have_posts() ) {
+					$query_phase->the_post();
+					
+					get_template_part('views/content-phase', 'front');
+				}
+			?>
 
-	</main><!-- #main -->
+		</main><!-- #main -->
+
+	</div>
 
 </section>
 

@@ -2,7 +2,7 @@ button {
 	@include transition(all $time $ease);
 }
 
-.btn, a .btn {
+.btn, a .btn, {
 	padding: ($gutter * 1.5) ($gutter * 3);
 	min-width: 80px;
 	border: 1px solid;
@@ -48,6 +48,28 @@ button {
 		
 		&:hover, &:focus {
 			background-color: $red;
+			color: white;
+		}
+	}
+
+	&.btn-transp {
+		background-color: transparent;
+	}
+}
+
+input {
+	padding: ($gutter * 1.5) ($gutter * 3);
+	min-width: 80px;
+	border: 1px solid;
+	border-radius: 2px;
+	display: inline-block;
+	background-color: transparent;
+	@extend .h4;
+
+	&[type="submit"] {
+		&:hover {
+			cursor: pointer;
+			background: $red;
 			color: white;
 		}
 	}

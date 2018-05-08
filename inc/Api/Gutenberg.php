@@ -47,6 +47,9 @@ class Gutenberg
 			'editor_style' => 'gutenberg-test',
 			'style' => 'gutenberg-test'
 		) );
+
+		add_theme_support( 'editor-color-palette', '#881b1b', '#fff', '#000', '#f0f0f0');
+
 	}
 
 	public function awps_render_block_latest_post( $attributes )

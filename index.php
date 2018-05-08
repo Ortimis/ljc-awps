@@ -16,7 +16,7 @@ get_header(); ?>
 
 <div class="container">
 
-	<div class="row align-stretch">
+	<div class="row align-stretch justify-center">
 
 		<div class="col-sm-8">
 
@@ -54,9 +54,6 @@ get_header(); ?>
 
 		</div><!-- .col- -->
 
-		<div id="sidebar" class="col-sm-4">
-			<?php get_sidebar(); ?>
-		</div><!-- .col- -->
 
 	</div><!-- .row -->
 

@@ -23,14 +23,14 @@
 <body <?php body_class(); ?>>
 	<div id="page" class="site" <?php echo ! is_customize_preview() ?: 'style="padding: 0 40px;"'; ?>>
 
-		<header id="masthead" class="site-header" role="banner">
+		<header id="masthead" class="site-header <?php echo is_front_page() ?: "onwhitebackground intransparent"; ?>" role="banner">
 
 			<?php if ( is_customize_preview() ) echo '<div id="awps-header-control"></div>'; ?>
 
 			<div class="container container-fluid">
 
 				<div class="row">
-					<div class="col-xs-12 col-sm-4">
+					<div class="col-lg-12">
 
 						<div class="site-branding">
 							<img id="header-logo" class="header-logo" 
@@ -48,8 +48,12 @@
 
 				</div><!-- .col -->
 
-				<div class="col-xs-12 col-sm-8">
-
+				<div class="col-lg-12">
+					<div id="menu-toggle" class="<?php if (!is_front_page()){ echo "background-is-white"; } ?>">
+						<div class="bar bar1"></div>
+						<div class="bar bar2"></div>
+						<div class="bar bar3"></div>
+					</div>
 					<nav id="site-navigation" class="main-navigation" role="navigation">
 						<?php
 						if ( has_nav_menu( 'primary' ) ) :
@@ -68,5 +72,9 @@
 		</div><!-- .container-fluid -->
 
 	</header><!-- #masthead -->
+
+	<?php if (!is_front_page()) {?>
+		<div class="content-spacer"></div>
+	<?php } ?>
 
 	<div id="content" class="site-content">

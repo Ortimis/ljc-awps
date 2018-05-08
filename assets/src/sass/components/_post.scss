@@ -2,6 +2,45 @@ article {
     position: relative;
 }
 
+ .posts-navigation,
+.post-navigation {
+	border-width: 1px 0 0;
+    position: relative;
+} 
+
+.nav-next {
+	float: right;
+	padding-left: 30px;
+	text-align: right;
+	width: 40%;
+}
+
+.nav-previous {
+	float: left;
+	padding-right: 30px;
+	text-align: left;
+	width: 40%;
+}
+
+.nav-links a {
+	display: block;
+	font-weight: 600;
+	line-height: 1.6em;
+	padding-top: 125px;
+	padding-bottom: 80px;
+	position: relative;
+}
+
+.single .nav-links a {
+	padding-top: 145px;
+}
+
+.nav-links a:after {
+	display: inline-block;
+	font-size: 26px;
+	margin-bottom: 10px;
+}
+
 /*
     PHASE FRONT
 */
@@ -39,7 +78,7 @@ article {
     color: white;
     background-color: $red;
     padding: 0;
-    margin: 0 2em 2em 0;
+    margin: 1em;
     max-width: 600px;
     transition: all .2s ease-in-out;
 
@@ -90,10 +129,51 @@ article {
     POST FRONT
 */
 
-/* * {
-    box-shadow: 0px 0px 22px 6px rgba(0,0,0,0.75);
-} */
+#aktuelles-wrapper {
+    width: auto;
+    margin-top: 2em;
+}
 
-.post {
-    max-width: 33vw;
+.slick-dots {
+    bottom: -30px;
+    color: black;
+}
+
+.slick-dots li button:before {
+    font-size: 30px
+}
+
+.slick-prev:before, .slick-next:before {
+    color: black;
+}
+
+.slick-prev {
+    left: -50px;
+}
+
+.slick-next {
+   right: -50px;
+}
+
+
+/* 
+    Content gedöns
+*/
+
+.single .entry-title, .page .entry-title {
+    text-transform: uppercase;
+
+
+    &::after {
+        content: '';
+        display: block;
+        height: 1px;
+        width: 100px;
+        background-color: black;
+        margin: .5em 0;
+    }
+}
+
+.posted-on {
+    margin-bottom: 5em;
 }

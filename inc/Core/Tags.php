@@ -30,8 +30,8 @@ class Tags
 			esc_html( get_the_modified_date() )
 		);
 		$posted_on = sprintf(
-			esc_html_x('Veröffentlicht am %s', 'post date', 'awps'),
-			'<a href="'.esc_url(get_permalink()).'" rel="bookmark">'.$time_string.'</a>'
+			esc_html_x('%s', 'post date', 'awps'),
+			'<span>'.$time_string.'</span>'
 		);
 		echo '<span class="posted-on">'.$posted_on.'</span>'; // WPCS: XSS OK.
 	}

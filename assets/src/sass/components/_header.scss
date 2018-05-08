@@ -1,52 +1,97 @@
 #masthead {
 	position: fixed;
-	background: rgba(0,0,0,0);
-	min-width: 100vw;
+	background: rgba(136, 27, 27,1);
+	width: 320px;
+	height: 100vh;
+	overflow-y: auto;
+	right: -320px;
 	max-width: 100vw;
 	padding-bottom: .9em;
 	padding-top: 1em;
-	transition: all .2s ease-in-out;
+	transition: all .4s ease-in-out;
 	z-index: 100000;
 
-	&.intransparent {
-		background: $red;
+	&.open {
+		right: 0;
+	}
+
+	@media (max-width: $md ) {
+		width: 100vw;
+		background:rgba(136, 27, 27,.9);
+		right: -100vw;
 	}
 }
 
 .main-navigation{
+	padding-top: 10em;
+	transition: height .2s ease-in-out;
 
-	padding-right: 30px;
 
 	ul {
-
-		text-transform: uppercase;
+		padding: 0;
+		text-transform: uppercase;	
 		
 		li {
-			list-style-type: none;
-			float: right;
-			margin-left: 2em;
+			width: 100%;
+			text-align: center;
+			margin: 0;
+			font-size: 1.5em;
+			line-height: 1.5em;
+			display: inline-block;
 
 			a {
 				color: white;
 
 				&:hover {
-					color: $red;
+					opacity: .5;
 				}
 			}
 		}
 	}
-	
 }
 
+#menu-toggle {
+	position: fixed;
+	right: 1em;
+	cursor: pointer;
+	.bar {
+		width: 35px;
+		height: 3px;
+		background-color: white;
+		margin: 10px 0;
+		transition: all .4s ease-in-out;
+	}
+	&.background-is-white {
+		.bar{
+			background-color: black;
+		}
+	}
+	
+	&.toggled {
+		.bar1{
+			transform: rotate(-45deg) translate(-9px, 9px);
+		}
+		.bar2{
+			opacity: 0;
+		}
+		.bar3{
+			transform: rotate(45deg) translate(-9px, -9px);
+		}
+		.bar {
+			background-color: white;
+		}
+	}
+}
+
+
+.site-branding {
+	display: flex;
+	justify-content: center;
+}
 .header-logo {
 	transform: scale(0.5);
 	position: absolute;
-	top: -30px;
+	top: -3em;
 	transition: all .2s ease-in-out;
-
-	&.small-logo {
-		transform: scale(0.2);
-		top: -110px;
-	}
 }
 
