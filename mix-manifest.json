@@ -3,6 +3,12 @@
     "/assets/dist/css/style.css": "/assets/dist/css/style.css",
     "/assets/dist/css/admin.css": "/assets/dist/css/admin.css",
     "/assets/dist/css/gutenberg.css": "/assets/dist/css/gutenberg.css",
+    "/assets/dist/js/app.js.map": "/assets/dist/js/app.js.map",
+    "/assets/dist/css/style.css.map": "/assets/dist/css/style.css.map",
+    "/assets/dist/css/admin.css.map": "/assets/dist/css/admin.css.map",
+    "/assets/dist/css/gutenberg.css.map": "/assets/dist/css/gutenberg.css.map",
     "/assets/dist/js/gutenberg.js": "/assets/dist/js/gutenberg.js",
-    "/assets/dist/js/admin.js": "/assets/dist/js/admin.js"
+    "/assets/dist/js/gutenberg.js.map": "/assets/dist/js/gutenberg.js.map",
+    "/assets/dist/js/admin.js": "/assets/dist/js/admin.js",
+    "/assets/dist/js/admin.js.map": "/assets/dist/js/admin.js.map"
 }

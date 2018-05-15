@@ -14,7 +14,7 @@
 		<div class="col-lg-4 col-md-6 content">
 			<h2>Ausschreibung</h2>
 			<p><?php the_field('allgemeiner_text') ?></p>
-			<span>Anmeldeschluss: <?php the_field('anmeldeschluss') ?></span>
+			<span class="entry-meta">Anmeldeschluss: <?php the_field('anmeldeschluss') ?></span>
 		</div>
 		
 		<div class="col-lg-5 col-md-6 call-to-action">
