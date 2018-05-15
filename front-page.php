@@ -10,7 +10,7 @@
 get_header(); ?>
 
 
-    <section id="hero" data-vide-bg="wp-content/themes/ljc-awps/assets/dist/images/bg-video/LJC_BG_WEB" data-vide-options="loop: true, muted: true, position: 0% 0%, className: ljcbgweb" >
+    <section id="hero" data-vide-bg="<?php echo get_template_directory_uri(); ?>/assets/dist/images/bg-video/LJC_BG_WEB" data-vide-options="loop: true, muted: true, position: 0% 0%, className: ljcbgweb" >
         <div class="container full-height">
             <div class="row">
                 <img class="main-logo" src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/LJC-Logo_Weiss.svg" alt="<?php bloginfo( 'name' ); ?>" title="<?php bloginfo( 'name' ); ?>">
