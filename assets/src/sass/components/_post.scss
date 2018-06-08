@@ -132,6 +132,10 @@ article {
 #aktuelles-wrapper {
     width: auto;
     margin-top: 2em;
+
+    .blogpost .entry-content, .blogpost .entry-header {
+        padding-right: 2em;
+    }
 }
 
 .slick-dots {

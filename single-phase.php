@@ -9,13 +9,8 @@
 
 ?>
 <?php
-/**
- * The template for displaying all single posts
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
- *
- * @package awps
- */
+
+
 
 get_header(); ?>
 
@@ -28,11 +23,9 @@ get_header(); ?>
 			<div id="primary" class="content-area">
 				<main id="main" class="site-main" role="main">
 					<?php
-					while ( have_posts() ) : the_post(); ?>
-
-
-
-
+					while ( have_posts() ) : the_post(); 
+					$status = get_field('phasenstatus'); ?>
+					
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<header class="entry-header">
 						<?php
@@ -41,9 +34,51 @@ get_header(); ?>
 					</header><!-- .entry-header -->
 
 					<div class="entry-content">
-						<span>Anmeldeschluss: <?php the_field('anmeldeschluss') ?></span>
-						<?php the_field('programm'); ?>
+						<?php 
+							if ($status === Ausschreibung) {
+						?>
+								
+								<div class="mt-8 mb-8"><?php the_field('allgemeiner_text');?></div>
+								<br>
 						<?php
+							} elseif ($status === Nachlese) { ?>
+								<div class="mt-8 mb-8"><?php the_field('nachlese');?></div>
+							<?php } ?>	
+						<div class="programm alignfull">
+							<div class="container">
+								<h2 class="mb-6">Programm</h2>
+								<?php the_field('programm'); ?>					
+							</div>
+						</div>
+
+						<?php 
+							if ($status === Ausschreibung) {
+						?>
+						<div class="call-to-action mt-8 mb-8">
+							<a href="<?php echo home_url();?>/mitsingen" class="btn btn-sm btn-light">Jetzt Anmelden!</a>	
+							<p>Anmeldeschluss für diese Phase: <?php the_field('anmeldeschluss') ?></p>
+						</div>
+
+
+						<div class="row">
+							<div class="col-md-6">
+								<h2>Arbeitsphase</h2>
+								<?php the_field('arbeitsphase'); ?>
+							</div>
+							<div class="col-md-6 pl-2">
+							<h2>Rahmendaten</h2>
+						<?php the_field('rahmendaten'); ?>
+							</div>
+						</div>
+						
+						
+
+						<h2>Kosten</h2>
+						<?php the_field('kosten'); ?>
+
+							<?php } ?>
+
+						<!-- <?php 
 							the_content( sprintf(
 									/* translators: %s: Name of current post. */
 									wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'awps' ), array(
@@ -57,7 +92,7 @@ get_header(); ?>
 								'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'awps' ),
 								'after' => '</div>',
 							) );
-						?>
+						?> -->
 					</div><!-- .entry-content -->
 
 					<footer class="entry-footer">

@@ -52,7 +52,7 @@ if ( $query_aktuelles->have_posts() ) {
 				</div><!-- #primary -->
 
 				
-				<a href="<?php echo home_url(); ?>/blog" class="btn btn-sm btn-light btn-transp">Zum Blog</a>
+				<a href="<?php echo home_url(); ?>/blog" class="btn btn-sm btn-light btn-transp mt-10 mb-5">Zum Blog</a>
 	</div><!-- .container -->
 
 </section>

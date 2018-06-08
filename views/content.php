@@ -9,7 +9,15 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('blogpost'); ?>>
+<?php 
+if ( is_single() ) {
+	?>
+		<a href="<?php echo get_home_url(); ?>">Zurück</a>
+	<?php
+}
+?>
+
+<article id="post-<?php the_ID(); ?>" <?php post_class('blogpost') ?>>
 	<header class="entry-header <?php if ( is_single() ) { echo 'mb-10 single'; } ?>">
 		<?php
 				if ( is_single() ) :

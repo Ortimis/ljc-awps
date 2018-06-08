@@ -1,0 +1,14 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/css/style.css": "/css/style.css",
+    "/css/admin.css": "/css/admin.css",
+    "/css/gutenberg.css": "/css/gutenberg.css",
+    "/js/app.js.map": "/js/app.js.map",
+    "/css/style.css.map": "/css/style.css.map",
+    "/css/admin.css.map": "/css/admin.css.map",
+    "/css/gutenberg.css.map": "/css/gutenberg.css.map",
+    "/js/gutenberg.js": "/js/gutenberg.js",
+    "/js/gutenberg.js.map": "/js/gutenberg.js.map",
+    "/js/admin.js": "/js/admin.js",
+    "/js/admin.js.map": "/js/admin.js.map"
+}

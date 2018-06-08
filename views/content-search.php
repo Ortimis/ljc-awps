@@ -8,6 +8,13 @@
  */
 
 ?>
+<?php 
+if ( is_single() ) {
+	?>
+		<a href="<?php echo get_home_url(); ?>">Zurück</a>
+	<?php
+}
+?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
