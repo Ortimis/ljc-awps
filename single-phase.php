@@ -25,7 +25,7 @@ get_header(); ?>
 					<?php
 					while ( have_posts() ) : the_post(); 
 					$status = get_field('phasenstatus'); ?>
-					
+
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<header class="entry-header">
 						<?php
@@ -35,13 +35,13 @@ get_header(); ?>
 
 					<div class="entry-content">
 						<?php 
-							if ($status === Ausschreibung) {
+							if ($status === 'Ausschreibung') {
 						?>
 								
 								<div class="mt-8 mb-8"><?php the_field('allgemeiner_text');?></div>
 								<br>
 						<?php
-							} elseif ($status === Nachlese) { ?>
+							} elseif ($status === 'Nachlese') { ?>
 								<div class="mt-8 mb-8"><?php the_field('nachlese');?></div>
 							<?php } ?>	
 						<div class="programm alignfull">
@@ -52,7 +52,7 @@ get_header(); ?>
 						</div>
 
 						<?php 
-							if ($status === Ausschreibung) {
+							if ($status === 'Ausschreibung') {
 						?>
 						<div class="call-to-action mt-8 mb-8">
 							<a href="<?php echo home_url();?>/mitsingen" class="btn btn-sm btn-light">Jetzt Anmelden!</a>	
