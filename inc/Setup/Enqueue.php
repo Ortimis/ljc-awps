@@ -24,10 +24,10 @@ class Enqueue
 		}
 
 		// CSS
-		wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/dist/css/style.css', array(), '1.0.0', 'all' );
+		wp_enqueue_style( 'main', mix('css/style.css'), array(), '1.0.0', 'all' );
 
 		// JS
-		wp_enqueue_script( 'main', get_template_directory_uri() . '/assets/dist/js/app.js', array(), '1.0.0', true );
+		wp_enqueue_script( 'main', mix('js/app.js'), array(), '1.0.0', true );
 
 		// Activate browser-sync on development environment
 		if ( getenv( 'APP_ENV' ) === 'development' ) :

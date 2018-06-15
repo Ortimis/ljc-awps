@@ -23,7 +23,10 @@ class Menus
         */
         register_nav_menus(array(
             'primary' => esc_html__( 'Primary', 'awps' ),
-            'footer' => esc_html__( 'Footer', 'awps')
+            'footer1' => esc_html__( 'Footer1', 'awps'),
+            'footer2' => esc_html__( 'Footer2', 'awps'),
+            'footer3' => esc_html__( 'Footer3', 'awps'),
+            'footer4' => esc_html__( 'Footer4', 'awps'),
         ));
     }
 }

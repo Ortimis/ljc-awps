@@ -38,3 +38,7 @@ mix.js( 'assets/src/scripts/app.js', 'assets/dist/js' )
 	.copyDirectory( 'assets/src/fonts', 'assets/dist/fonts' )
 	.copyDirectory( 'assets/src/images', 'assets/dist/images' )
 	.sourceMaps();
+
+if (mix.inProduction()) {
+	mix.version();
+}

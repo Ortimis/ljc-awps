@@ -21,6 +21,14 @@ footer {
 		display: block;
 		margin-top: 0;
 	}
+
+	&.yellow {
+		background-color: $yellow;
+		color: black;
+		a {
+			color: black;
+		}
+	}
 }
 
 #content {

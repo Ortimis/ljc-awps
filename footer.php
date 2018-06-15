@@ -17,13 +17,13 @@
 	<?php if (!is_front_page()) {?>
 		<div class="content-spacer"></div>
 	<?php } ?>
-	<footer id="colophon" class="site-footer container-fluid pt-5" role="contentinfo">
+	<footer id="colophon" class="site-footer container-fluid pt-5 <?php if ( is_page_template('page-templates/jubilaeum.php') ) {echo 'yellow';} ?>" role="contentinfo">
 		<div class="container">
-			<div class="row mb-5 justify-between">
-				<div class="col-lg-4">
-					<h3>Anderes</h3>
+			<div class="row mb-5">
+				<div class="col-lg-3 col-md-6 col-sm-12">
+					<h3>Der Chor</h3>
 					<?php
-					if ( has_nav_menu( 'footer' ) ) :
+					if ( has_nav_menu( 'footer1' ) ) :
 						wp_nav_menu( array(
 							'theme_location' => 'footer',
 							'menu_id' => 'footer-menu'
@@ -31,8 +31,29 @@
 					endif;
 					?>
 				</div>
-				<div class="col-lg-4">
-					<?php //get_search_form(); ?>
+				<div class="col-lg-3 col-md-6 col-sm-12">
+					<h3>Förderverein</h3>
+					<?php
+					if ( has_nav_menu( 'footer2' ) ) :
+						wp_nav_menu( array(
+							'theme_location' => 'footer2',
+							'menu_id' => 'footer-menu'
+						) );
+					endif;
+					?>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12">
+					<h3>Rechtliches</h3>
+					<?php
+					if ( has_nav_menu( 'footer3' ) ) :
+						wp_nav_menu( array(
+							'theme_location' => 'footer3',
+							'menu_id' => 'footer-menu'
+						) );
+					endif;
+					?>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12">
 				</div>
 
 			</div>
