@@ -64,7 +64,6 @@ if (! function_exists('mix')) {
             $manifestDirectory = "/{$manifestDirectory}";
 		}
 		$rootDir = dirname(__FILE__, 2);
-		var_dump($rootDir);
         if (! $manifest) {
 			$manifestPath =  $rootDir . $manifestDirectory . 'mix-manifest.json';
             if (! file_exists($manifestPath)) {
