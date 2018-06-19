@@ -34,6 +34,7 @@ function nachlese_excerpt() {
 add_shortcode( 'foerderverein-loop', 'get_foerderverein_loop');
 
 function get_foerderverein_loop() {
+    ob_start();
     // WP_Query arguments
     $args = array(
         'post_type'              => array('post'),
@@ -85,5 +86,7 @@ function get_foerderverein_loop() {
 
     // Restore original Post Data
     wp_reset_postdata();
+
+    return ob_get_clean();
 }
 		
