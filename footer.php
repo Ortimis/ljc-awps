@@ -17,7 +17,12 @@
 	<?php if (!is_front_page()) {?>
 		<div class="content-spacer"></div>
 	<?php } ?>
-	<footer id="colophon" class="site-footer container-fluid pt-5 <?php if ( is_page_template('page-templates/jubilaeum.php') ) {echo 'yellow';} ?>" role="contentinfo">
+	<footer id="colophon" class="site-footer container-fluid pt-5 
+		<?php if ( is_page_template('page-templates/jubilaeum.php') || in_category('foerderverein') ) 
+			{
+				echo 'yellow';
+			} ?>" 
+		role="contentinfo">
 		<div class="container">
 			<div class="row mb-5">
 				<div class="col-lg-3 col-md-6 col-sm-12">
