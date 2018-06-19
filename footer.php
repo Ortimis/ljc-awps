@@ -18,7 +18,7 @@
 		<div class="content-spacer"></div>
 	<?php } ?>
 	<footer id="colophon" class="site-footer container-fluid pt-5 
-		<?php if ( is_page_template('page-templates/jubilaeum.php') || in_category('foerderverein') ) 
+		<?php if ( is_page_template('page-templates/jubilaeum.php') || in_category('foerderverein') && is_single() ) 
 			{
 				echo 'yellow';
 			} ?>" 

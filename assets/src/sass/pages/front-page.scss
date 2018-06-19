@@ -121,3 +121,21 @@ section{
         }
     }
 }
+
+#jubilaeum {
+    background-color: $yellow;
+
+    h1 {
+        text-transform: uppercase;
+    }
+
+    .btn-light {
+        color: white;
+        background: black;
+
+        &:hover, &:focus {
+			background-color: $yellow;
+			border: 1px solid
+		}
+    }
+}

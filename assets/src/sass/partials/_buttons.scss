@@ -45,10 +45,12 @@ button {
 		color: $red;
 		background-color: white;
 		font-weight: 400;
+		border: none;
 		
 		&:hover, &:focus {
 			background-color: $red;
 			color: white;
+			border: 1px solid
 		}
 	}
 
