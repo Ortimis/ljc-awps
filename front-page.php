@@ -16,7 +16,7 @@ get_header(); ?>
                 <img class="main-logo" src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/LJC-Logo_Weiss.svg" alt="<?php bloginfo( 'name' ); ?>" title="<?php bloginfo( 'name' ); ?>">
             </div>
             <div class="row">
-                <div id="videobutton">Video sehen</div>
+                <div id="videobutton" class="">Video sehen</div>
             </div>
         </div>
     </section>

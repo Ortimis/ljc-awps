@@ -83,42 +83,29 @@ section{
 }
 
 #videobutton{
-    color: white;
+    color: black;
+    background-color: white;
     position: absolute;
     cursor: pointer;
-    right: 2rem;
+    right: 50%;
+    transform: translateX(50%);
     bottom: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
+    padding: .5em 2em; 
+    transition: all .2s ease-in-out;
+    text-align: center;
 
     @media (max-width: $md) {
         right: 50%;
-        transform: translateX(50%)
-    }
-
-    &::before {
-        content: '';
-        background: url('../../images/play.svg');
-        display: block;
-    }
-
-    &::after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 1px;
-        background: white;
-        position: absolute;
-        opacity: 0;
-        left: -10%;
-        transition: all .2s ease-in-out;
+        transform: translateX(50%);
+        font-size: 1rem;
+        padding: .5em 1em;
     }
 
     &:hover, &:focus {
-        &::after {
-            opacity: 1;
-            left: 0;
-        }
+        color: white;
+        background-color: black;
     }
 }
 
