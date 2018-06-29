@@ -71,7 +71,7 @@ if (! function_exists('mix')) {
             }
 			$manifest = json_decode(file_get_contents($manifestPath), true);
 		}
-		$path = $manifestDirectory . $manifest[$path];
+        $path = $manifestDirectory . $manifest[$path];
 		return get_template_directory_uri() . $path;
     }
 }

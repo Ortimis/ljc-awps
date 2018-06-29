@@ -62,10 +62,22 @@
 				</div>
 
 			</div>
-			<div class="row">
-				<div class="site-info">
+			<div class="row mb-10 justify-center align-bottom">
+
+				<div class="col-md-3">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/mwk_logo" alt=""></img>
+				</div>
+				<div class="col-md-2"></div>
+				<div class="col-md-3">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/lmr_logo" alt=""></img>
+				</div>
+			</div>
+			<div class="row justify-center">
+
+				<div class="col-md-6 col-xs-12 site-info">
 					<p>Landesjugendchor Baden-Württemberg &copy; <?php echo date('Y'); ?></p>
 				</div><!-- .site-info -->
+			</div>
 			</div>
 		</div>
 

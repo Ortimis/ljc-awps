@@ -29,8 +29,16 @@ footer {
 			color: black;
 		}
 	}
+
+	img {
+		width: 100%;
+	}
 }
 
 #content {
 	min-height: 60vh;
+}
+
+.site-info {
+	text-align: center;
 }
