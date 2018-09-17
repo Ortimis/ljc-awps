@@ -15,7 +15,6 @@ const app = new App();
 //const carousel = new Carousel();
 $('#aktuelles-wrapper').slick({
     dots: true,
-    infinite: false,
     arrows: false,
     autoplay: true,
     speed: 500,
