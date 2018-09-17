@@ -7,10 +7,6 @@
 
 ?>
 
-<?php
-$starttime = get_field('datum_und_uhrzeit');
-var_dump($starttime);
-?>
 <article id="post-<?php the_ID(); ?>" <?php post_class('konzert-front col-lg-3 col-md-6'); ?>>
     <a href="<?php the_permalink(); ?>"><span></span></a>
 	<header class="entry-header">
