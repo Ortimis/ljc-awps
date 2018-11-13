@@ -64,11 +64,34 @@
 							) );
 						endif;
 						?>
+
 					</nav>
 
 				</div><!-- .col -->
 
 			</div><!-- .row -->
+
+			<div class="row">
+				<div class="col-lg-12">
+				<ul class="social-media-links social-media-links-sidebar mt-10">
+							<li>
+								<a href="https://www.facebook.com/landesjugendchor/" class="social-media-link">
+									<i class="fa fa-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.youtube.com/channel/UCSuu1TxQe75sBt4EKutTisA" class="social-media-link">
+									<i class="fa fa-youtube"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com/ljcbw/" class="social-media-link">
+									<i class="fa fa-instagram"></i>
+								</a>
+							</li>
+						</ul>
+				</div>
+			</div>
 		</div><!-- .container-fluid -->
 
 	</header><!-- #masthead -->

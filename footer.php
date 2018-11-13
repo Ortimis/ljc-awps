@@ -73,7 +73,27 @@
 				</div>
 			</div>
 			<div class="row justify-center">
-
+				<div class="col-md-2">
+					<ul class="social-media-links">
+						<li>
+							<a href="https://www.facebook.com/landesjugendchor/" class="social-media-link">
+								<i class="fa fa-facebook"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/channel/UCSuu1TxQe75sBt4EKutTisA" class="social-media-link">
+								<i class="fa fa-youtube"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/ljcbw/" class="social-media-link">
+								<i class="fa fa-instagram"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row justify-center">
 				<div class="col-md-6 col-xs-12 site-info">
 					<p>Landesjugendchor Baden-Württemberg &copy; <?php echo date('Y'); ?></p>
 				</div><!-- .site-info -->

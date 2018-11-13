@@ -25,6 +25,7 @@ class Enqueue
 
 		// CSS
 		wp_enqueue_style( 'main', mix('css/style.css'), array(), '1.0.0', 'all' );
+		wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css', array(), '4.6.3');
 
 		// JS
 		wp_enqueue_script( 'main', mix('js/app.js'), array(), '1.0.0', true );

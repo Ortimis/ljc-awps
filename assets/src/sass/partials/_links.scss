@@ -8,3 +8,24 @@ a {
 		color: $red;
 	}
 }
+
+.social-media-links {
+	list-style-type: none;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	.social-media-link-icon {
+		fill: white;
+	}
+
+	&.social-media-links-sidebar {
+		justify-content: space-around;
+		a {
+			color: white;
+
+			&:hover {
+				opacity: .8;
+			}
+		}
+	}
+}
