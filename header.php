@@ -85,7 +85,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="https://www.instagram.com/ljcbw/" class="social-media-link">
+								<a href="https://www.instagram.com/landesjugendchor/" class="social-media-link">
 									<i class="fa fa-instagram"></i>
 								</a>
 							</li>
