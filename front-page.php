@@ -22,6 +22,7 @@ get_header(); ?>
     </section>
 
     <?php get_template_part( 'page-templates/front-page/section', 'ausschreibung' ); // Wird nur angezeigt, wenn eine Phase mit "Status: Ausschreibung" vorhanden ist. ?>
+    <?php get_template_part( 'page-templates/front-page/section', 'ausschreibung-herbst19' ); // Special-Section für Herbst 2019. ?>
     <?php get_template_part( 'page-templates/front-page/section', 'konzerte' ); // // Wird nur angezeigt, wenn mindestens ein Konzert noch nicht stattgefunden hat. ?>
     <?php get_template_part( 'page-templates/front-page/section', 'jubilaeum' ); ?>
     <?php get_template_part( 'page-templates/front-page/section', 'aktuelles' ); // Wird immer angezeigt. Blog + Arbeitsphasen mit Status Nachlese ?>

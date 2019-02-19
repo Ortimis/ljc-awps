@@ -50,6 +50,10 @@ article {
     .call-to-action {
         text-align: right;
 
+        &--left {
+            text-align: left
+        }
+
         .phase-titel{
             word-spacing:10000px;
             letter-spacing: .2em;
