@@ -16,22 +16,24 @@ const app = new App();
 $('#aktuelles-wrapper').slick({
     dots: true,
     arrows: false,
-    autoplay: true,
+    autoplay: false,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     responsive: [
         {
             breakpoint: 1520,
             settings: {
                 slidesToShow: 2,
+                slidesToScroll: 1,
                 arrows: false
             },
         },
         {
             breakpoint: 600,
             settings: {
-                slidesToShow: 1
+                slidesToShow: 1,
+                slidesToScroll: 1,
             }
         }
     ]
@@ -44,7 +46,7 @@ if (videobutton) {
         //Add Modal
         var modal = document.createElement('div');
         modal.classList.add('modal');
-        modal.id ="modal";
+        modal.id = "modal";
 
         var iframe = document.createElement('iframe');
         iframe.src = 'https://www.youtube.com/embed/uIhvdkL4hHE';
@@ -53,12 +55,12 @@ if (videobutton) {
 
         modal.appendChild(iframe);
         document.body.appendChild(modal);
-        setTimeout(function(){
+        setTimeout(function () {
             modal.classList.add('modal-open');
         }, 1);
 
         //Remove Modal
-        modal.addEventListener('click', function(){
+        modal.addEventListener('click', function () {
             document.body.removeChild(modal);
         });
 
