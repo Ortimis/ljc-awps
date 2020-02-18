@@ -26,14 +26,9 @@ section{
     color: white;
     box-shadow:  0px 2px 29px 0px rgba(50, 50, 50, 0.75);
 
-    a {
+    .content a {
         color: white;
         text-decoration: underline;
-
-        &.btn-light {
-            color: $red;
-            text-decoration: none;
-        }
     }
 
     
